@@ -22,7 +22,7 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="Department of Posts API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title=settings.APP_TITLE, version="1.0.0", lifespan=lifespan)
 app.include_router(upload.router)
 app.include_router(postal.router)
 

@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     APP_PORT: int = 8001
     APP_RELOAD: bool = False
     LOG_LEVEL: str = "info"
+    APP_TITLE:str = "Department of Posts API"
 
     # PostgreSQL
     DB_HOST: str = "localhost"
